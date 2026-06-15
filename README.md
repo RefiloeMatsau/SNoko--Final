@@ -1,6 +1,7 @@
 <div align="center">
 
 # SNOKONOKO
+youtube link: https://www.youtube.com/watch?v=9sBUPE2gDnk&t=49s
 
 **A personal finance tracking app for Android built with modern architecture and clean design principles.**
 
