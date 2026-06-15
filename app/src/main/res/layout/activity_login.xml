@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="32dp"
+        android:paddingBottom="48dp">
+
+        <!-- Logo placeholder -->
+        <FrameLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/card_background">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="S"
+                android:textColor="@color/accent"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+        </FrameLayout>
+
+        <!-- App name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Snokonoko"
+            android:textColor="@color/text1"
+            android:textSize="32sp"
+            android:fontFamily="serif"
+            android:letterSpacing="-0.02"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Tagline -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tagline"
+            android:textColor="@color/text3"
+            android:textSize="13sp"
+            android:layout_marginBottom="48dp"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/input_background"
+            android:hint="Email address"
+            android:textColorHint="@color/text3"
+            android:textColor="@color/text1"
+            android:paddingHorizontal="16dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/input_background"
+            android:hint="Password"
+            android:textColorHint="@color/text3"
+            android:textColor="@color/text1"
+            android:paddingHorizontal="16dp"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Error -->
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone"/>
+
+        <!-- Login button -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/btn_primary"
+            android:text="Log In"
+            android:textColor="@color/text1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="32dp"
+            android:stateListAnimator="@null"/>
+
+        <!-- Sign up link -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account?  "
+                android:textColor="@color/text2"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tvGoSignup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign up"
+                android:textColor="@color/accent"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/made_in_sa"
+            android:textColor="@color/text3"
+            android:textSize="10sp"
+            android:layout_marginTop="48dp"/>
+
+    </LinearLayout>
+</ScrollView>

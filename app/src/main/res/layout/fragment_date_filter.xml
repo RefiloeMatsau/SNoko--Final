@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="56dp"
+    android:paddingBottom="24dp">
+
+    <!-- Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filter by Date"
+        android:textColor="@color/text1"
+        android:textSize="26sp"
+        android:fontFamily="serif"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Date Range Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE RANGE"
+            android:textColor="@color/text3"
+            android:textSize="10sp"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Start Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="START DATE"
+            android:textColor="@color/text3"
+            android:textSize="9sp"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="6dp"/>
+
+        <Button
+            android:id="@+id/btnStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/input_background"
+            android:text="Select Start Date"
+            android:textColor="@color/text1"
+            android:textAlignment="textStart"
+            android:paddingHorizontal="14dp"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- End Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="END DATE"
+            android:textColor="@color/text3"
+            android:textSize="9sp"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="6dp"/>
+
+        <Button
+            android:id="@+id/btnEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/input_background"
+            android:text="Select End Date"
+            android:textColor="@color/text1"
+            android:textAlignment="textStart"
+            android:paddingHorizontal="14dp"
+            android:stateListAnimator="@null"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Apply Button -->
+        <Button
+            android:id="@+id/btnApplyFilter"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/btn_primary"
+            android:text="Apply Filter"
+            android:textColor="@color/text1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+
+    <!-- Results Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RESULTS"
+            android:textColor="@color/text3"
+            android:textSize="10sp"
+            android:letterSpacing="0.08"/>
+
+        <TextView
+            android:id="@+id/tvResultCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 transactions"
+            android:textColor="@color/text3"
+            android:textSize="11sp"/>
+
+    </LinearLayout>
+
+    <!-- Total Amount -->
+    <TextView
+        android:id="@+id/tvTotalAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:padding="16dp"
+        android:text="Total: R 0.00"
+        android:textColor="@color/text1"
+        android:textSize="18sp"
+        android:fontFamily="serif"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Transaction List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/card_background"/>
+
+</LinearLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingTop="56dp"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="@color/text1"
+            android:textSize="26sp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- User info card -->
+        <LinearLayout
+            android:id="@+id/userProfileContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="12dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textColor="@color/text1"
+                android:textSize="22sp"
+                android:fontFamily="serif"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvUserEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="email@example.com"
+                android:textColor="@color/text2"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+        <!-- Net balance card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/card_background"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NET BALANCE"
+                android:textColor="@color/text3"
+                android:textSize="10sp"
+                android:letterSpacing="0.08"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:id="@+id/tvNetBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="R 0"
+                android:textColor="@color/green"
+                android:textSize="28sp"
+                android:fontFamily="serif"/>
+
+        </LinearLayout>
+
+        <!-- Challenges -->
+        <Button
+            android:id="@+id/btnChallenges"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/btn_ghost"
+            android:text="Challenges"
+            android:textColor="@color/text1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Badges -->
+        <Button
+            android:id="@+id/btnBadges"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/btn_ghost"
+            android:text="Badges"
+            android:textColor="@color/text1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Manage Categories -->
+        <Button
+            android:id="@+id/btnManageCategories"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/btn_ghost"
+            android:text="Manage Categories"
+            android:textColor="@color/text1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Set Monthly Goals -->
+        <Button
+            android:id="@+id/btnSetMonthlyGoals"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/btn_ghost"
+            android:text="Set Monthly Goals"
+            android:textColor="@color/text1"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Clear All Data -->
+        <Button
+            android:id="@+id/btnClearData"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/btn_ghost"
+            android:text="Clear All Transaction Data"
+            android:textColor="@color/red"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Log out -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@drawable/btn_danger"
+            android:text="Log Out"
+            android:textColor="@color/red"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:stateListAnimator="@null"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</ScrollView>

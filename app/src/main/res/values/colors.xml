@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Background layers -->
+    <color name="bg">#000000</color>
+    <color name="surface1">#0F0F0F</color>
+    <color name="surface2">#161616</color>
+    <color name="surface3">#222222</color>
+    <color name="border">#1A1A1A</color>
+
+    <!-- Text -->
+    <color name="text1">#FFFFFF</color>
+    <color name="text2">#8C8C8C</color>
+    <color name="text3">#474747</color>
+
+    <!-- Brand - Medium Violet Red -->
+    <color name="accent">#C71585</color>
+    <color name="accent_dim">#1FC71585</color>
+    <color name="accent_light">#F49AC2</color>
+
+    <!-- Semantic -->
+    <color name="green">#30D158</color>
+    <color name="green_dim">#1930D158</color>
+    <color name="red">#FF453A</color>
+    <color name="red_dim">#1AFF453A</color>
+    <color name="orange">#FF9F0A</color>
+    <color name="orange_dim">#1AFF9F0A</color>
+
+    <!-- Category colours -->
+    <color name="cat_food">#FF6B6B</color>
+    <color name="cat_transport">#0A84FF</color>
+    <color name="cat_shopping">#BF5AF2</color>
+    <color name="cat_entertainment">#FF9F0A</color>
+    <color name="cat_fitness">#FF375F</color>
+    <color name="cat_utilities">#636366</color>
+    <color name="cat_medical">#34C759</color>
+    <color name="cat_education">#5AC8FA</color>
+    <color name="cat_other">#8E8E93</color>
+    <color name="cat_income">#30D158</color>
+
+    <!-- Legacy colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>
